@@ -1,17 +1,29 @@
 package Atividade_hotel;
 public class Pagamento {
     private double valor;
-    private String formaPgto;
+    private String forma;
     private boolean pago;
 
-    public Pagamento(double valor, String formaPgto) {
+    Pagamento(double valor, String forma) {
         this.valor = valor;
-        this.formaPgto = formaPgto;
+        this.forma = forma;
         this.pago = false;
     }
 
-    public double getValor() { return valor; }
-    public String getFormaPagamento() { return formaPgto; }
-    public boolean isPago() { return pago; }
-    public void setPago(boolean pago) { this.pago = pago; }
+    public void setPago(boolean pago) {
+        this.pago = pago;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public String getForma() {
+        return forma;
+    }
+
+    public boolean isPago() {
+        return pago;
+    }
 }
+
