@@ -6,7 +6,7 @@ public class Endereco {
     private String estado;
     private String cep;
 
-    public Endereco(String rua, int numero, String cidade, String estado, String cep) {
+ Endereco(String rua, int numero, String cidade, String estado, String cep) {
         this.rua = rua;
         this.numero = numero;
         this.cidade = cidade;
@@ -14,11 +14,24 @@ public class Endereco {
         this.cep = cep;
     }
 
-    public String getRua() { return rua; }
-    public int getNumero() { return numero; }
-    public String getCidade() { return cidade; }
-    public String getEstado() { return estado; }
-    public String getCep() { return cep; }
+    public String getRua() {
+        return rua;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public String getCep() {
+        return cep;
+    }
 }
 
-//hola
