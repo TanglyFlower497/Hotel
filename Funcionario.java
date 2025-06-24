@@ -4,11 +4,20 @@
  * and open the template in the editor.
  */
 package Atividade_hotel;
+public class Funcionario extends Pessoa {
+    private String cargo;
 
-/**
- *
- * @author 12421698650
- */
-public class Funcionario {
-    
+    Funcionario(String nome, String cpf, String cargo) {
+        super(nome, cpf);
+        this.cargo = cargo;
+    }
+    public void exibirDados() {
+        super.exibirDados();
+        System.out.println("Cargo: " + cargo);
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
 }
+
