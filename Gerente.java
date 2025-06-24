@@ -4,11 +4,20 @@
  * and open the template in the editor.
  */
 package Atividade_hotel;
+public class Gerente extends Funcionario {
+    private String nivelAcesso;
 
-/**
- *
- * @author 12421698650
- */
-public class Gerente {
-    
+   Gerente(String nome, String cpf, String nivelAcesso) {
+        super(nome, cpf, "Gerente");
+        this.nivelAcesso = nivelAcesso;
+    }
+    public void exibirDados() {
+        super.exibirDados();
+        System.out.println("Nível de Acesso: " + nivelAcesso);
+    }
+
+    public String getNivelAcesso() {
+        return nivelAcesso;
+    }
 }
+
