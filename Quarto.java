@@ -4,7 +4,7 @@ public class Quarto {
     private String tipo;
     private double preco;
 
-    public Quarto(int numero, String tipo, double preco) {
+    Quarto(int numero, String tipo, double preco) {
         this.numero = numero;
         this.tipo = tipo;
         this.preco = preco;
