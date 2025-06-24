@@ -1,14 +1,17 @@
 package Atividade_hotel;
 
 public class Pessoa {
-    private String nome;
-    private String cpf;
+    protected String nome;
+    protected String cpf;
 
     public Pessoa(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
     }
 
-    public String getNome() { return nome; }
-    public String getCpf() { return cpf; }
+    public void exibirDados() {
+        System.out.println("Nome: " + nome);
+        System.out.println("CPF: " + cpf);
+    }
 }
+
